@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 16px;
+	margin: 0 ;
+	color: #555555;
+	background-color: #F4F3F3;
+}
+h1{ font-size: 24px; color: #2D1FDA}
+h2{ font-size: 20px}
+h3{ font-size: 16px}
+p{ line-height: 1.5rem; 
+	margin-bottom: 25px; 
+	margin-top: 0
+}
+a{}
+a:hover{}
+.top-bar i{ margin-left: 5px; margin-right: 2px}
+.navbar
+{ 
+	background-color: white;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+	padding: 10px 0;
+	position: sticky;
+	top:0;
+	z-index: 999;
+	
+}
+
+.navbar .container
+{
+	display: flex;
+	justify-content: space-between;/* day cac box trong flex theo be ngang*/
+	align-items: center /* day cac box center theo chieu doc*/
+}
+.menu ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+.menu ul li { position: relative}
+.menu ul li a
+{
+ color: #333;
+ text-decoration: none;
+ padding: 10px 20px;
+ display: block;
+ text-transform: uppercase;
+ font-size: 16px;
+}
+.menu ul li a:hover
+{
+	/*background-color: #FFC113;*/
+	border-bottom: 2px solid #FFC113;
+	color:#056CB6;
+}
+.menu ul ul
+{
+	display:none;
+	background: #056CB6;
+	left: 0; top: 100%;
+	position: absolute;
+	width: 200px;
+	
+}
+.menu ul ul a {color: #fff}
+.menu ul ul a:hover{background-color: #FFC113}
+.menu ul li:hover >ul {display: block}
+.menu-footer a{display: block;text-decoration: none;color: white; padding: 5px}
+	.menu-footer a:hover{color: #FFC113}
+
+main{min-height: 500px}
+.img-100{width: 100%;height: auto}
+.pl-50{padding-left: 50px}
+.pr-50{padding-right: 50px}
+.px-50{padding-left: 50px;padding-right:50px}
+
+/*-----------------dinh dang flex--------------------*/
+.d-flex{display: flex}
+/*-----------------dinh dang flex chieu doc--------------------*/
+.align-item-star{align-items: flex-start}
+.align-item-center{align-items: center}
+.align-item-end{align-items: flex-end}
+/*-----------dinh dang flex chieu ngang--------------------------*/
+.justify-center{ justify-content: center}
+.justify-end{ justify-content:flex-end}
+.justify-between{ justify-content:space-between}
+
+
+.backtoTop
+{
+	background: pink;
+	position: fixed;
+	right: 10px; bottom: 10px;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	border-radius: 50%;
+	box-shadow: 2px 2px 5px #999;
+
+}
+
+
+
+
+
